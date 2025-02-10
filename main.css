@@ -1,0 +1,146 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+/* SELETOR DE FILHO DIRETO- Seleciona elementos filhos diretos de um elemento pai.
+É representado pelo sinal de maior (>).
+Por exemplo, o seletor ul > li seleciona todos os elementos li que são filhos diretos de um elemento ul.*/
+
+body > header{
+    background-color: rgb(67, 185, 185);
+    padding: 20px 0;
+    color: rgb(230, 237, 244);
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header li{
+    display: inline;
+    /*font-family: Define a família de fonte a ser usada no texto.*/
+    font-family: Arial, Helvetica, sans-serif; 
+    
+}
+
+header li a{
+    color: rgb(230, 237, 244);
+    text-decoration: none; /* remover a linha de anderlanie ou subtraço*/
+    margin-left: 16px; /* espaçamento entre os links- Econômia e Esportes*/
+}
+
+
+/*SELETOR DE CLASSE- Seleciona elementos que possuem um atributo class específico. 
+É representado por um ponto (.) seguido do nome da classe.
+Por exemplo, o seletor .destaque seleciona todos os elementos com a classe "destaque".*/
+.container{
+    width: 1366px; /* Largura*/
+    margin: 0 auto;  /* margem entre cima e embaixo do elemento , também nos lados esquerdo e direito*/ 
+}
+
+.articles{
+    display: flex; /*display: Define como um elemento é exibido (bloco, em linha, em linha-bloco, etc.).*/
+    flex-wrap: wrap;
+    justify-content: space-between; 
+
+}
+
+.articles article img{
+    /* height: 180px; */
+    width: 100%;
+}
+
+.articles article{
+    width: 30%;
+}
+
+section{
+    padding: 16px 0;
+}
+
+section h2{
+    margin-bottom: 16px;
+}
+
+.articles article h3{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+
+/* Definição da aparência geral dos botões*/
+.articles article a {
+    background-color: rgb(41, 179, 203);
+    color: aliceblue;
+    padding: 6px; /*padding: Define o preenchimento interno de um elemento.*/
+    display: inline-block;
+    text-decoration: none; /*text-decoration: Define a decoração do texto (sublinhado, tachado etc.).*/
+    font-weight: bolder;
+    margin-top: 6px;
+}
+/*Hover- É usada para aplicar estilos a um elemento quando o cursor do mouse é posicionado sobre ele.*/
+
+.articles article a:hover{
+    text-decoration: underline;
+}
+
+/*SELETOR DE ELEMENTOS- Seleciona elementos HTML com base em seus nomes de tag. 
+Por exemplo, o seletor p seleciona todos os parágrafos em um documento HTML.*/
+
+.articles article p,
+.articles article a{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.articles article h3{
+    font-size: 22px; /*• font-size: Define o tamanho da fonte do texto.*/
+}
+
+section h2{
+    font-size: 30px;
+    font-family: Lucida Sans, Helvetica, Arial, sans-serif;
+    
+}
+
+section{
+    background: color 0;
+}
+
+#sports .articles article a{
+    background-color: rgb(67, 185, 185);
+}
+
+#economy .articles article a{
+    background-color: rgb(38, 225, 163);
+}
+
+#entertainment .articles article a{
+    background-color:lightskyblue ;
+}
+
+#technology .articles article a{
+    background-color: rgb(240, 144, 159);
+}
+
+#sports{
+    background-color:rgb(255, 255, 255);
+    
+}
+
+#economy{
+    background-color: rgb(213, 243, 213);
+    
+}
+
+#entertainment{
+    background-color: lightcyan;
+    
+}
+
+#technology{
+    background-color: lightgray;
+    
+}
